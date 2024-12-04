@@ -1,0 +1,212 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdf5c3;
+}
+
+.hero-section {
+  background: linear-gradient(to left, rgb(250, 203, 211), #ADD8E6);
+  padding: 6rem 4rem; /* Slightly reduced padding for balance */
+  display: flex;
+  justify-content: space-between; /* Adjusted for spacing */
+  align-items: center;
+  width: 80%;
+  margin: 100px auto 0; /* Centered margin */
+  border-radius: 2rem;
+  box-sizing: border-box;
+}
+
+.hero h1 {
+  font-size: 2.5rem; /* Larger font size for stronger impact */
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.hero p {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.125rem; /* Slightly larger font size for readability */
+}
+
+.btn-shop,
+.btn-learn {
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  font-size: 1rem; /* Increased font size */
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.btn-shop {
+  background-color: #6b46c1;
+}
+
+.btn-shop:hover {
+  background-color: #008CBA;
+  padding: 10px 20px;
+  transform: translateY(-3px); /* Small hover lift effect */
+}
+
+.btn-learn {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.last {
+  background: linear-gradient(to left, pink, #ADD8E6);
+  padding: 4rem 2rem; /* Adjusted padding for balance */
+  text-align: center;
+}
+
+.last h2 {
+  font-size: 2rem; /* Larger heading */
+  color: #2f855a;
+  font-weight: bold;
+}
+
+.last p {
+  font-size: 1rem; /* Adjusted font size for better readability */
+  color: #4a5568;
+  margin-top: 0.5rem;
+}
+
+form {
+  margin-top: 1rem;
+}
+
+input[type="email"] {
+  padding: 0.75rem; /* Increased padding for easier interaction */
+  border: 1px solid #cbd5e0;
+  border-radius: 0.25rem;
+  width: calc(100% - 120px); /* Adjusted width for input alignment */
+  font-size: 1rem; /* Font size increase */
+}
+
+button[type="submit"] {
+  background-color: #38a169;
+  color: rgb(202, 242, 127);
+  padding: 0.75rem 1.25rem; /* Increased padding for button */
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem; /* Font size adjustment */
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #2f855a; /* Slight darker green on hover */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between; /* Adjusted spacing for flexibility */
+  background-color: #fdf5df;
+  padding: 20px;
+}
+
+.card {
+  width: 22%;
+  border: 0px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #fdf5df;
+  transition: transform 0.3s ease; /* Added smooth transition */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Hover lift effect */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.card img:hover {
+  max-height: 300px;
+  max-width: 300px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem; /* Increased font size for better visibility */
+  font-weight: bold;
+  margin: 30px 0; /* Adjusted margin */
+}
+
+.btn-account {
+  background-color: #f5c1f5;
+  color: white;
+  padding: 0.75rem 1.25rem; /* Increased padding */
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 1rem; /* Increased font size */
+  transition: background-color 0.3s ease;
+}
+
+.btn-account:hover {
+  background-color: #d18fd2; /* Subtle hover effect */
+}
+
+/* Add-to-cart button styles */
+button.but {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 18px; /* Larger padding */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.but:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+button.but:active {
+  transform: scale(0.95);
+  background-color: #004080;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .hero-section {
+      flex-direction: column;
+      padding: 4rem 2rem;
+      margin: 80px auto 0;
+  }
+
+  .card {
+      width: 48%; /* Adjust card width for smaller screens */
+  }
+
+  h1 {
+      font-size: 2.5rem; /* Adjust font size for small screens */
+  }
+
+  .last h2 {
+      font-size: 1.5rem; /* Adjust heading font size */
+  }
+
+  .btn-shop,
+  .btn-learn,
+  .btn-account {
+      padding: 0.5rem 1rem; /* Adjust button padding */
+  }
+}
